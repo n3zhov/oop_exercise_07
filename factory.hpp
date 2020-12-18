@@ -126,12 +126,6 @@ static shared_ptr<Figure<T>> CreateFigure(istream& in) {
         sides[3] = distance(points[3], points[4]);
         sides[4] = distance(points[0], points[4]);
         double arg = sides[0];
-        int ans = count_if(sides.begin(), sides.end(), [arg](double &side) {
-            return arg == side;
-        });
-        if(ans != sides.size()){
-            throw exception();
-        }
     }
     catch(const exception& e) {
         cerr << e.what() << "\n";

@@ -29,6 +29,18 @@ int main() {
     string s;
     ifstream in;
     ofstream out;
+    cout << "\'n\' - create new document" << "\n";
+    cout << "\'o\' - open document" << "\n";
+    cout << "\'s\' - save document" << "\n";
+    cout << "\'+\' - add a figure" << "\n";
+    cout << "\'-\' - remove a figure" << "\n";
+    cout << "\'p\' - print document" << "\n";
+    cout << "\'u\' - undo changes" << "\n";
+    cout << "\'h\' - show this message" << "\n";
+    cout << "Figure types" << "\n";
+    cout << "1 - Trapeze" << "\n";
+    cout << "2 - Rhomb" << "\n";
+    cout << "3 - Pentagon" << "\n";
     while (cin >> s) {
         if (s == "n") {
             doc.CreateNew();
